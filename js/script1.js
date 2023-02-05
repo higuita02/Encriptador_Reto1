@@ -11,8 +11,8 @@ var textChange = "";
 function desEcryptionVocals() {
 
     let vectorModificado = [];
-
-
+    
+    let ban=0;
 
     textValue = document.getElementById("inputTex").value;
     console.log("valor en el texto" + textValue);
@@ -29,6 +29,7 @@ function desEcryptionVocals() {
             if (vectorString[index] == "a" && vectorString[index + 1] == "i") {
                 vectorModificado.push("a");
                // alert("ai detectado")
+                ban=1;
                 index++
             }
 
@@ -36,6 +37,7 @@ function desEcryptionVocals() {
 
                // alert("enter detectado")
                 vectorModificado.push("e");
+                ban=1;
                 index = index + 4;
 
             }
@@ -43,6 +45,7 @@ function desEcryptionVocals() {
             if (vectorString[index] == "i" && vectorString[index + 1] == "m" && vectorString[index + 2] == "e" && vectorString[index + 3] == "s") {
 
                 vectorModificado.push("i");
+                ban=1;
                 index = index + 3;
 
             }
@@ -51,12 +54,14 @@ function desEcryptionVocals() {
 
 
                 vectorModificado.push("o");
+                ban=1;
                 index = index + 3;
             }
 
             if (vectorString[index] == "u" && vectorString[index + 1] == "f" && vectorString[index + 2] == "a" && vectorString[index + 3] == "t") {
 
                 vectorModificado.push("u");
+                ban=1;
                 index = index + 3;
             }
         }
@@ -65,7 +70,12 @@ function desEcryptionVocals() {
 
     vectorModificado = vectorModificado.join("");
     console.log("descodificado" + vectorModificado);
-
+    
+    if(ban==0){
+        
+        alert("oh oh, creo que el mensaje no cumple con los criterios para ser des-cifrado");
+    
+    }
     return vectorModificado;
 }
 
