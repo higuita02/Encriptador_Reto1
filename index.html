@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Challenge Encriptador</title>
+</head>
+<body>
+
+    <header>
+        <div class="containerLogo">
+            <img src="./assets/Vector.png" alt="">
+        </div>
+    </header>
+    <section class="containerPrincipal">
+
+        <div class="containerInputText">        
+            <textarea name="" id="inputTex" class="inputTex" cols="30" rows="10" placeholder="Ingese texto aquí"></textarea>
+        </div>
+        
+        <div class="containerEncriptador">
+
+            <div class="containertextEncryption">
+              
+                <textarea name="" id="textEncryption" class="textEncryption" cols="30" rows="10" disabled> </textarea>
+            </div>    
+            <div class="containerImg" id="containerImg">
+                  <img src="./assets/Muneco.png" alt="">
+            </div>
+          
+            <div class="containerTextImg" id="containerTextImg">
+               
+                <h1>Ningún mensaje fue <br> encontrado</h1>
+                <p>Ingresa el texto que deseas encriptar o <br> desencriptar</p>
+            </div>
+
+          
+         
+            
+
+        
+            <button class="btnCopiarTextoEncriptado" id="btnCopiarTextoEncriptado_id" onclick="copyText()">Copiar</button>
+
+        </div>
+
+        
+     
+    </section>
+
+    <footer>
+
+      
+        <p class="textIconNotificacion"><span><img src="./assets/iconNotificacion.png" class="icon" alt=""></span>Solo letras minúsculas y sin acento  </p>
+        <button class="btnEncriptar" id="btnEncriptar" onclick="getText()"> Encriptar</button>
+        <button class="btnDesencriptar" id="btnDesencriptarId" onclick="getText2()"> Desencriptar</button>
+
+    
+    </footer>
+
+
+
+
+    <script src="./js/script1.js"></script>
+
+</body>
+</html>
