@@ -28,13 +28,13 @@ function desEcryptionVocals() {
         } else {
             if (vectorString[index] == "a" && vectorString[index + 1] == "i") {
                 vectorModificado.push("a");
-                alert("ai detectado")
+               // alert("ai detectado")
                 index++
             }
 
             if (vectorString[index] == "e" && vectorString[index + 1] == "n" && vectorString[index + 2] == "t" && vectorString[index + 3] == "e" && vectorString[index + 4] == "r") {
 
-                alert("enter detectado")
+               // alert("enter detectado")
                 vectorModificado.push("e");
                 index = index + 4;
 
