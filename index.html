@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(max-width: 1440px)">
+    <link rel="stylesheet" href="./css/movil.css" media="(max-width: 660px)">
+
     <title>Challenge Encriptador</title>
 </head>
 <body>
@@ -14,6 +17,7 @@
             <img src="./assets/Vector.png" alt="">
         </div>
     </header>
+
     <section class="containerPrincipal">
 
         <div class="containerInputText">        
@@ -36,10 +40,6 @@
                 <p>Ingresa el texto que deseas encriptar o <br> desencriptar</p>
             </div>
 
-          
-         
-            
-
         
             <button class="btnCopiarTextoEncriptado" id="btnCopiarTextoEncriptado_id" onclick="copyText()">Copiar</button>
 
@@ -51,11 +51,14 @@
 
     <footer>
 
-      
-        <p class="textIconNotificacion"><span><img src="./assets/iconNotificacion.png" class="icon" alt=""></span>Solo letras minúsculas y sin acento  </p>
-        <button class="btnEncriptar" id="btnEncriptar" onclick="getText()"> Encriptar</button>
-        <button class="btnDesencriptar" id="btnDesencriptarId" onclick="getText2()"> Desencriptar</button>
+        <div class="container">
+            <p class="textIconNotificacion"><span><img src="./assets/iconNotificacion.png" class="icon" alt=""></span>Solo letras minúsculas y sin acento  </p>
+        </div>
 
+        <div class="contenedorBotonesFooter">
+          <button class="btnEncriptar" id="btnEncriptar" onclick="getText()"> Encriptar</button>
+            <button class="btnDesencriptar" id="btnDesencriptarId" onclick="getText2()"> Desencriptar</button>
+         </div>    
     
     </footer>
 
