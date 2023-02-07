@@ -1,6 +1,8 @@
 # Encriptador_Reto1
 
  #challengeonecodificador4
+ 
+  Este proyecto se dasarrollo como reto del proceso de formacion ONE – Oracle Next Education, el cual busca formar profesionales en ambito de la tecnologia en LATAM
 
 El link referente a la documentación, se especifica el criterio para el cifrado y descifrado de un texto ingresado por el usuario.
 
